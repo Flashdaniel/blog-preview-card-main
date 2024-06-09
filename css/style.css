@@ -1,7 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Figtree", sans-serif;
+  line-height: 150%;
+  background-color: #f4d04e;
+  position: relative;
+
+  /* Using flexbox to align preview card horizontally 
+  and verticelly to the center of the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.preview-card {
+  color: #111;
+  background-color: #ffffff;
+  max-width: 38.4rem;
+  min-width: 32.7rem;
+  padding: 2.4rem;
+  margin: 0 1rem;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 #000000;
+  font-weight: 800;
+}
+
+.preview-card:hover,
+.preview-card:focus {
+  box-shadow: 16px 16px 0 0 #000000;
+}
+
+.preview-card header > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.preview-card .btn,
+footer {
+  margin-top: 2.4rem;
+}
+
+.preview-card a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.preview-card .btn a {
+  padding: 0.4rem 1.2rem;
+  border-radius: 5px;
+  background-color: #f4d04e;
+}
+
+.date,
+.summary {
+  font-weight: 500;
+}
+
+.preview-card h1 a:hover,
+.preview-card h1 a:focus {
+  color: #f4d04e;
+}
+
+.summary {
+  color: #7f7f7f;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer img {
+  width: 6.4rem;
+  padding-right: 1.2rem;
+  vertical-align: middle;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  /* Position the attribution at the bottom
+  of the page */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
