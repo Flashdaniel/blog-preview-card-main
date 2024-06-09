@@ -11,6 +11,9 @@ body {
   font-family: "Figtree", sans-serif;
   line-height: 150%;
   background-color: #f4d04e;
+}
+
+main {
   position: relative;
 
   /* Using flexbox to align preview card horizontally 
